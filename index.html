@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Social Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+              VANTA.BIRDS({
+                      el: "#vanta",
+                      mouseControls: true,
+                      touchControls: true,
+                      gyroControls: false,
+                      minHeight: 200.00,
+                      minWidth: 200.00,
+                      scale: 1.00,
+                      scaleMobile: 1.00,
+                      backgroundAlpha: 0.0,
+                      color2: 0xff00f0,
+                      wingSpan: 40.00,
+                      separation: 100.00,
+                      alignment: 77.00,
+                      cohesion: 5.00,
+                      quantity: 1.00 
+                    })
+
+              setTimeout(() => {
+                      const main = document.querySelector('main')
+                      main.style.opacity = 1
+                      main.style.filter = 'blur(0px)'
+                    }, 1000)
+            })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main>
+      <header>
+        <img src="images/avatar.jpg" />
+        <h1>@inforgotten</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://vk.com/inf0rgotten">
+            <img src="images/vk.svg" alt="My VK" width="20" />
+            VK
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCUf4KmPUIQmoMKIwGCX6r3A">
+            <img src="images/YouTube.svg" alt="My YouTube channel" width="20" />
+            YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/inforgotten">
+            <img src="images/github.svg" alt="My GitHub Page" width="20" />
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
